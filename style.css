@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    color: white;
+    overflow: hidden;
+}
+
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(30, 30, 30);
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 25px;
+    font-weight: 250;
+    font-size: 17.5px;
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+}
+
+li {
+    list-style: none;
+}
+
+.msg {
+    margin: 200px auto 0;
+    position: relative;
+    z-index: 10;
+}
+
+.msg h1 {
+    font-size: 150px;
+    font-weight: 400;
+    width: fit-content;
+    margin: 0 auto;
+    line-height: 0.9;
+    position: relative;
+}
+
+.greet {
+    /* position: relative; */
+    left: -70px;
+}
+
+.fname {
+    background-image: linear-gradient(to right bottom, rgb(255, 84, 84), rgb(0, 208, 255));
+    color: transparent;
+    background-clip: text;
+}
+
+.lname {
+    /* position: relative; */
+    left: -4px;
+    background-image: linear-gradient(to right bottom, rgb(0, 208, 255), rgb(244, 183, 68));
+    color: transparent;
+    background-clip: text;
+}
+
+.images img {
+    width: 300px;
+    height: 405px;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    /* transform: translate(-50%,-50%); */
+    top: 105px;
+    left: 59.9%;
+    border-radius: 10px;
+    object-fit: cover;
+    transform-origin: 0% 150%;
+}
+
+
+.img1 {
+    transform: translate(0%, 0%) rotate(-10deg);
+    z-index: 4;
+    /* rotate: 10deg; */
+}
+
+.img2 {
+    transform: translate(0%, -10%) rotate(0deg);
+    z-index: 3;
+    /* rotate: 20deg; */
+
+}
+
+.img3 {
+    transform: translate(0%, -10%) rotate(10deg);
+    z-index: 2;
+    /* rotate: 30deg; */
+
+}
+
+.img4 {
+    transform: translate(0%, -10%) rotate(20deg);
+    z-index: 1;
+    /* rotate: 40deg; */
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 60px; */
+    padding: 25px 25px;
+    font-weight: 200;
+    font-size: 17.5px;
+}
+
+footer h3 {
+    font-size: 17.5px;
+    font-weight: 200;
+}
+
+footer img {
+    width: 60px;
+    height: 60px;
+    rotate: 30deg;
+    position: relative;
+}
+
+footer .contact {
+    position: absolute;
+    right: 95px;
+    top: 35%;
+    border: 1.5px dotted rgb(0, 238, 255);
+
+}
+
+.hidden {
+    display: none;
+}
+
+footer .contact a {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    padding: 0 5px;
+}
+
+/* -------------------------------- */
+
+@media (max-width:900px) {
+
+    nav {
+        height: 5vh;
+        padding: 0 15px;
+        font-weight: 250;
+        font-size: 20px;
+    }
+
+    nav .other {
+        display: none;
+    }
+
+    .msg {
+        margin: 20vh 2%;
+    }
+
+    .msg h1 {
+        font-size: 10.5vh;
+        margin: 0 0;
+    }
+    .greet {
+        left: 0px;
+    }
+    .lname {
+        left: 0px;
+    }
+
+    .images img {
+        width: 33vw;
+        height: 55vw;
+        top: 15vh;
+        left: 40%;
+        transform-origin: 0% 150%;
+    }
+
+    footer {
+        padding: 25px 25px;
+        font-weight: 200;
+        font-size: 17.5px;
+    }
+
+    footer h3 {
+        font-size: 2.5vw;
+    }
+
+    footer .contact {
+        right: 100px;
+        border: 1px solid rgb(0, 255, 238);
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    footer .name {
+        display: none;
+    }
+    footer img {
+        width: 60px;
+        height: 60px;
+    }
+    footer .contact a {
+        font-size: 3vw;
+    }
+
+}
+
+/* --------------------  */
+
+@media (max-width:490px) {
+    footer {
+        padding: 25px 12.5px;
+    }
+     footer h3 {
+        font-size: 3.5vw;
+    }
+    footer .contact {
+        right: 70px;
+    }
+    footer img {
+        width: 50px;
+        height: 50px;
+    }
+    footer .contact a {
+        font-size: 5vw;
+    }
+}
